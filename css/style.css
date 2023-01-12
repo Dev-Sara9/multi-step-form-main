@@ -1,0 +1,107 @@
+:root{
+    --h-color:rgb(10,52,94);
+    --button-color:rgb(3,41,90);
+    --label-color:rgb(32,47,70);
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #FFF;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flex-basis-30 {
+    flex-basis: 40%;
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.flex-basis-70 {
+    flex-basis: 60%;
+}
+
+.serMob{
+    display: none;
+}
+
+@media (max-width:991px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .ser{
+        display: none;
+    }
+
+    .serMob{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -3%;
+        right: -12%;
+    }
+    
+    .flex-basis-30 {
+        flex-basis: 100%;
+        background-image: url(../images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        /* position: relative;
+        right: -3rem; */
+    }
+
+    .flex-basis-70 {
+        flex-basis: 100%;
+        position: absolute;
+        top: 7rem;
+        left: 10%;
+        width: 55%;
+    }
+}
+
+h2 {
+    color: var(--h-color);
+}
+.col-auto button {
+    background-color: var(--button-color);
+    color: #FFF;
+}
+label{
+    color: var(--label-color);
+}
+input.form-control{
+    width: 70%;
+}
+.rounded-circle{
+    height: 35px;
+    width: 35px;
+}
+
+.fcard img{
+    width: 2rem;
+}
+
+.fcard div{
+    width: 33.33%;
+    margin: 0.2rem;
+}
+
+input[type="checkbox"]{
+    margin-left:0px !important;
+}
+
+.toggleclass{
+    display: none;
+}
+
+.active{
+    background-color: #FFF;
+    color:var(--label-color);
+}
