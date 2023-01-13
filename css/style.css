@@ -67,7 +67,7 @@
         top: 7rem;
         /* left: 10%; */
         left: 7rem;
-        width: 55%;
+        width: 70%;
     }
 
     .secondPage div{
@@ -102,6 +102,12 @@ input.form-control{
 .fcard div{
     width: 33.33%;
     margin: 0.2rem;
+}
+
+@media(max-width:991px){
+    .fcard div{
+        width: 100%;
+    }
 }
 
 input[type="checkbox"]{
